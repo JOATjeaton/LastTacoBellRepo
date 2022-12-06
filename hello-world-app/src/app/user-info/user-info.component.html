@@ -1,0 +1,17 @@
+<p *ngIf="myInfo == undefined">failed to get info</p>
+
+<div *ngIf="myInfo != undefined">
+    <div class = container-fluid>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="flex-column">
+                User: {{myInfo.Firstname}} {{myInfo.LastName}}
+            </div>
+            <div class="flex-column">
+                Mix ID: {{myInfo.mix_id}}
+            </div>
+            <div class="flex-column">
+                Github: {{myInfo.Github}}
+            </div>
+        </div>
+    </div>
+</div>
