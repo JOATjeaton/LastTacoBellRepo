@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "hello-world-app:build:production",
+            "firebaseProject": "hello-world-app-a8fd2",
+            "firebaseHostingSite": "hello-world-app-a8fd2"
+          }
         }
       }
     }

@@ -20,10 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
-import { initializeApp } from 'firebase/app';
+//import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore'
 import { AddProductComponent } from './card/add-product/add-product.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+//import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,9 @@ import { AddProductComponent } from './card/add-product/add-product.component';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [
   ],

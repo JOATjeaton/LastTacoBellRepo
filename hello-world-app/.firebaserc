@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hello-world-app-a8fd2": {
+      "hosting": {
+        "hello-world-app": [
+          "hello-world-app-a8fd2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hello-world-app-a8fd2"
+  }
+}
