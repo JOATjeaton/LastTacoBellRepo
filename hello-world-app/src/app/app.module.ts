@@ -27,6 +27,7 @@ import { AddProductComponent } from './card/add-product/add-product.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 //import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     GiftCardLayoutComponent,
     DeliveryLayoutComponent,
     UserInfoComponent,
-    AddProductComponent
+    AddProductComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
