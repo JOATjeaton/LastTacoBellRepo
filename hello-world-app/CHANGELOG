@@ -1,0 +1,9 @@
+Changelog
+
+Lab9
+  -Added ng forms and a /admin page with these forms to add stuff to the database
+  -Created a service that pushed data to the backend.
+  
+  Issues
+    -VM crashed, and when pulled on a new VM, code suddenly stopped working.
+    -found problem was isolated to "interfaces.d.ts", which suggests this is an angular fire issue, but corrections found online proved unsuccessful.
