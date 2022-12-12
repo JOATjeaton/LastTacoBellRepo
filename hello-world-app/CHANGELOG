@@ -7,3 +7,9 @@ Lab9
   Issues
     -VM crashed, and when pulled on a new VM, code suddenly stopped working.
     -found problem was isolated to "interfaces.d.ts", which suggests this is an angular fire issue, but corrections found online proved unsuccessful.
+
+
+Lab10:
+  -created new authorization component
+  -created an authorization service
+  -Used web API code from environments.ts to interract with the backend
